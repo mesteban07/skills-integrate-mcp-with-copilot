@@ -16,12 +16,32 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#auth-container {
+  margin-top: 16px;
+}
+
+#teacher-status {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+#teacher-status button,
+#auth-container > button {
+  background-color: #8bc34a;
+  color: #173400;
+  font-size: 14px;
+  padding: 8px 12px;
 }
 
 header h1 {
@@ -123,6 +143,37 @@ section h3 {
 
 .delete-btn:hover {
   background-color: #ffebee;
+}
+
+.dialog-backdrop {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.45);
+  display: flex;
+  inset: 0;
+  justify-content: center;
+  padding: 20px;
+  position: fixed;
+  z-index: 10;
+}
+
+.dialog {
+  max-width: 420px;
+  position: relative;
+  width: 100%;
+}
+
+.close-button {
+  background: transparent;
+  color: #333;
+  font-size: 24px;
+  padding: 0 8px;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+.close-button:hover {
+  background: #eee;
 }
 
 .participants-section p {
